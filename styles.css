@@ -10,3 +10,31 @@ h1{
     color: cornflowerblue;
     font-size: 2em;
 }
+img{
+    max-width: 400px;
+    max-height: 300px;
+    border-radius: 70px 0 70px 0;
+}
+.ball{
+    animation: bounce 1s ease-in 0 infinite forwards none;
+}
+
+/* Animation */
+
+@keyframes bounce{
+    0%{
+        transform: translate(50px,20px);
+    }
+    25%{
+        transform: rotate(45deg,45deg);
+    }
+    50%{
+        transform: rotate(90deg,90deg);
+    }
+    75%{
+        transform: scale(3);
+    }
+    100%{
+        transform: translate(50px,20px);
+    }
+}
